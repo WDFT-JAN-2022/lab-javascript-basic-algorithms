@@ -14,3 +14,12 @@ console.log(`the driver has the longest name, it has ${hacker1.length} character
 }
 
 // Iteration 3: Loops
+
+let upperHacker1 = hacker1.toUpperCase();
+let spacedHacker1 = "";
+
+for (let i = 0; i < (upperHacker1.length); i++) {
+    spacedHacker1 += (upperHacker1[i] + " ");
+}
+
+console.log(spacedHacker1);
