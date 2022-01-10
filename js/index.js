@@ -88,3 +88,30 @@ for (theword of wordArray) {
 }
 
 console.log("there are this many et's: " + etCount);
+
+
+let phraseToCheck = "step on no pets";
+let phrase1 = [];
+let phrase2 = [];
+let check = false;
+
+for (let i = 0; i < phraseToCheck.length / 2 - 1; i++) {
+        phrase1.push(phraseToCheck[i]);
+}
+for (let j = phraseToCheck.length - 1; j > phraseToCheck.length / 2; j--) {
+        phrase2.push(phraseToCheck[j]);
+}
+
+for (let k = 0; k < phrase1.length; k++) {
+        if (phrase1[k] === phrase2[k]) {
+                check = true;
+        } else {
+                check = false;
+        }
+}
+
+if (check) {
+    console.log("This is a Palindrome");
+} else {
+    console.log("This is not a Palindrome");
+}
