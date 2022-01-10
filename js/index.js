@@ -23,3 +23,13 @@ for (let i = 0; i < (upperHacker1.length); i++) {
 }
 
 console.log(spacedHacker1);
+
+// 3.2
+// console.log(hacker2.split("").reverse().join(""));
+
+let newHacker = "";
+
+for (let i = hacker1.length - 1; i >= 0; i--) {
+    newHacker += hacker1[i];
+}
+console.log(newHacker);
